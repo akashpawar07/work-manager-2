@@ -6,7 +6,7 @@
     "dev:all": "concurrently \"npm run dev\" \"npm run screenshots\"",
     "dev": "next dev",
     "screenshots": "node scripts/screenshot.js",
-    "build": "next build && node scripts/screenshot.js",
+    "build": "npm run install-deps && npm run dev:all",
     "start": "next start",
     "lint": "next lint"
   },
